@@ -12,8 +12,8 @@ body {
 .carousel {
   margin-bottom: 0;
   padding-bottom: 0;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Carousel items */
@@ -24,7 +24,7 @@ body {
 /* Images inside carousel */
 .carousel-item img {
   width: 100%;
-  height: autox;
+  height: auto;
   /* desktop banner height */
   object-fit: contain;
   /* show full image */
