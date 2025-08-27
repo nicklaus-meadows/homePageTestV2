@@ -11,8 +11,7 @@ body {
 -------------------------------------------------- */
 .carousel {
   margin-bottom: 0;
-  padding-bottom: 8rem;
-  background: lightblue;
+  padding-bottom: 0;
   margin-right: 24px;
   margin-left: 24px;
 }
@@ -25,11 +24,11 @@ body {
 /* Images inside carousel */
 .carousel-item img {
   width: 100%;
-  height: 300px;
+  height: autox;
   /* desktop banner height */
   object-fit: contain;
   /* show full image */
-  background-color: #d3d3d3;
+
 }
 
 
@@ -41,11 +40,14 @@ body {
   right: 0;
   z-index: 10;
   text-align: center;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  padding: 0 1rem;
 }
 
 .container.marketing {
-  padding-top: 4rem;
-  background: lightyellow;
+  padding-top: 0;
+
 
 }
 
@@ -53,8 +55,6 @@ body {
 -------------------------------------------------- */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
-  margin-top: 3rem !important;
-  padding-top: 9rem;
   text-align: center;
 
 }
@@ -68,9 +68,7 @@ body {
   margin-left: 0.75rem;
 }
 
-.marketing {
-  padding-top: 4rem;
-}
+
 
 
 
@@ -80,7 +78,7 @@ body {
 /* Featurettes
 -------------------------------------------------- */
 .featurette-divider {
-  margin: 5rem 0;
+  margin: 4rem 0;
   /* Space out the Bootstrap <hr> more */
 }
 
@@ -112,36 +110,29 @@ body {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .carousel-item {
-    height: auto;
-    /* let it grow with content */
-    min-height: 250px;
-    /* base banner height */
-  }
-
   .carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    background-color: #d3d3d3;
+    height: 300px;
+    /* taller for mobile so text fits */
+    object-fit: cover;
   }
 
   .carousel-caption {
-    position: relative;
-    /* let it flow below image if needed */
-    bottom: auto;
-    padding: 0.5rem 1rem;
-    background: rgba(0, 0, 0, 0.3);
+    bottom: 1rem;
+    /* bring caption down slightly */
+    padding: 0 1rem;
   }
 
   .carousel-caption h1 {
     font-size: 1.5rem;
     line-height: 1.2;
-    color: white;
   }
 
   .carousel-caption p {
     font-size: 1rem;
-    color: white;
+  }
+
+  .carousel-caption a.btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
 }
