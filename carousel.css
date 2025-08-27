@@ -1,5 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+/* DONT USE THIS JUST FOR REFERENCE IT IS NOT LINKED NOR SHOULD IT BE USED */
 /* Padding below the footer and lighter body text */
 
 body {
@@ -13,28 +14,30 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carousel {
+/* .carousel {
   margin-bottom: 4rem;
-}
+} */
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
+  position: absolute;
   bottom: 3rem;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 /* Declare heights because of positioning of img element */
-.carousel-item {
-  height: auto;
-}
+/* .carousel-item {
+  height: 32rem;
+} */
 
-.carousel-item>img,
-.carousel-item>svg {
+.carousel-item>img {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
-  min-height: 300px;
-  /* Optional */
-  object-fit: cover;
 }
 
 
